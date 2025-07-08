@@ -4,7 +4,11 @@ import React from "react";
 const Button = ({ children, onClick, variant }) => (
   <button
     onClick={onClick}
-    className={\`px-4 py-2 rounded font-medium \${variant === "outline" ? "border border-orange-500 text-orange-600 bg-white hover:bg-orange-100" : "text-white bg-orange-500 hover:bg-orange-600"}\`}
+    className={`px-4 py-2 rounded font-medium ${
+      variant === "outline"
+        ? "border border-orange-500 text-orange-600 bg-white hover:bg-orange-100"
+        : "text-white bg-orange-500 hover:bg-orange-600"
+    }`}
   >
     {children}
   </button>
